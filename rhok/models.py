@@ -26,3 +26,11 @@ class MyModel(Base):
         self.name = name
         self.value = value
 
+class Record(Base):
+    __tablename__ = 'records'
+    id = Column(Integer, primary_key=True)
+    data = Column(Text)
+
+    def __init__(self, data):
+        self.data = data
+
