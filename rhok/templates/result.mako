@@ -18,29 +18,26 @@
 
 <div class="container">
   <header class="row">
-    <h1>RHoK</h1>
+    <h1>RHoK Results</h1>
   </header>
-  <div class="row" id="Main"></div>
+  <div class="row" id="Main">
+    <table>
+      <tr><th>Condition</th><th>Probability</th></tr>
+      <tr><td>ASD</td><td>${result['ASD']}</td></tr>
+      <tr><td>ADHD</td><td>${result['ADHD']}</td></tr>
+      <tr><td>DD</td><td>${result['DD']}</td></tr>
+      <tr><td>LI</td><td>${result['LI']}</td></tr>
+    </table>
+  </div>
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script src="static/js/vendor/twitter/bootstrap.min.js"></script>
-<script src="static/js/vendor/twitter/bootstrap-button.js"></script>
 <script src="static/js/vendor/documentcloud/underscore-min.js"></script>
 <script src="static/js/vendor/documentcloud/backbone-min.js"></script>
 <script src="static/js/vendor/jquery-ui-1.8.20.custom.min.js"></script>
 <script src="static/js/vendor/backbone-forms.js"></script>
 <script src="static/js/vendor/jquery-ui-editors.js"></script>
-
-<script src="static/js/built/rhok.js"></script>
-<script src="static/js/built/forms/models/tombstone.js"></script>
-<script src="static/js/built/forms/models/learning.js"></script>
-<script src="static/js/built/forms/models/adaptive.js"></script>
-<script src="static/js/built/forms/models/fine-motor-skill.js"></script>
-<script src="static/js/built/forms/models/grossmotorskills.js"></script>
-<script src="static/js/built/forms/collections.js"></script>
-<script src="static/js/built/forms/views.js"></script>
-<script src="static/js/built/app.js"></script>
 
 
 </body>

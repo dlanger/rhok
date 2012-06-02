@@ -7,3 +7,4 @@ dist/
 node_modules/
 *.log
 static/js/built/
+rhok/static/js/built/
