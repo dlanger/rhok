@@ -34,6 +34,7 @@
 <script src="static/js/built/rhok.js"></script>
 <script src="static/js/built/forms/models/tombstone.js"></script>
 <script src="static/js/built/forms/models/learning.js"></script>
+<script src="static/js/built/forms/models/adaptive.js"></script>
 <script src="static/js/built/forms/collections.js"></script>
 <script src="static/js/built/forms/views.js"></script>
 <script src="static/js/built/app.js"></script>

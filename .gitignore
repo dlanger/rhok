@@ -4,3 +4,6 @@
 build/
 dist/
 *.sw[0-9a-z]
+node_modules/
+*.log
+static/js/built/

@@ -4,6 +4,8 @@ class App
   $el: $('#Main')
 
   init: =>
+    tombstone = new Forms.Tombstone()
+    adaptive = new Forms.Adaptive()
 
     # Collection of all sections/fieldsets
     @fieldsets = new Backbone.Collection()
@@ -15,7 +17,12 @@ class App
       collection: @fieldsets
     }).render()
 
-    @$el.append(@formView.el)
+    adaptiveView = new Forms.SectionView({
+      model: adaptive
+    }).render()
+
+    @$el.append(tombstoneView.el)
+    @$el.append(adaptiveView.el)
 
 window.app = new App()
 
