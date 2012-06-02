@@ -11,6 +11,7 @@ class App
     @fieldsets.add(new Forms.Learning( header: 'Learning' ))
     @fieldsets.add(new Forms.Adaptive( header: 'Adaptive'))
     @fieldsets.add(new Forms.FineMotorSkills( header: 'Fine Motor Skills'))
+    @fieldsets.add(new Forms.GrossMotorSkills( header: 'Gross Motor Skills'))
     @formView = new Forms.FormView({
       collection: @fieldsets
     }).render()
