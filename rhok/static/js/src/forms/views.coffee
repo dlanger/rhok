@@ -3,6 +3,8 @@ Forms = RHOK.module 'forms'
 class Forms.SectionView extends Backbone.View
   tagName: 'fieldset'
 
+  className: 'well'
+
   headerTmpl: _.template('<h2><%= header %></h2>')
 
   initialize: ->
@@ -22,8 +24,6 @@ class Forms.SectionView extends Backbone.View
 
 class Forms.FormView extends Backbone.View
   tagName: 'form'
-
-  className: 'well'
 
   render: =>
     that = @

@@ -9,6 +9,7 @@ class App
     @fieldsets = new Backbone.Collection()
 
     @fieldsets.add(new Forms.Tombstone( header: 'Tombstone' ))
+    @fieldsets.add(new Forms.Learning( header: 'Learning' ))
 
     @formView = new Forms.FormView({
       collection: @fieldsets
