@@ -17,4 +17,3 @@ class Forms.GrossMotorSkills extends Backbone.Model
       dataType: 'number'
       type: 'Number'
 
-
