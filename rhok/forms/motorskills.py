@@ -54,3 +54,30 @@ class GrossMotorSkills(colander.Schema):
                     ('over', "Unusually good"),
                     ('floppy', "Exceptionally bad"))))
 
+
+class FineMotorSkills(colander.Schema):
+    dressing = colander.SchemaNode(
+        colander.Boolean(),
+        title="Avoids self-dressing")
+    buttons = colander.SchemaNode(
+        colander.Boolean(),
+        title="Has difficulties with buttons and zippers")
+    hand_preference = colander.SchemaNode(
+        colander.String(),
+        widget=deform.widget.SelectWidget(
+            values=(('right', "Right"),
+                    ('left', "Left"),
+                    ('both', "Both"))))
+    drawing = colander.SchemaNode(
+        colander.Boolean(),
+        title="Drawing difficulties",
+        description=("Any difficulties with drawing, colouring or copying?"))
+    writing = colander.SchemaNode(
+        colander.Boolean(),
+        title="Writing difficulties",
+        description=("Any difficulties with writing or staying on line " +
+                     "when writing?"))
+    puzzle = colander.SchemaNode(
+        colander.Boolean(),
+        title="Excellent puzzling skill")
+    
