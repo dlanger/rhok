@@ -1,5 +1,12 @@
 Forms = RHOK.module 'forms'
 
-class Question extends Backbone.Model
+class Forms.Tombstone extends Backbone.Model
+  schema:
+    name: 
+      dataType: 'text'
+      validators: ['required']
+    date_of_birth:
+      title: 'Date of Birth'
+      type: 'DateTime'
+      validators: ['required']
 
-Forms.Question = Question

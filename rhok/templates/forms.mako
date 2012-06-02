@@ -9,18 +9,23 @@
   <title></title>
   <meta name="description" content="">
   <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/backbone-forms.css">
+  <link rel="stylesheet" href="static/css/ui-lightness/jquery-ui-1.8.20.custom.css">
   <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
 
 
-<div class="container-fluid">
+<div id="Main" class="container-fluid">
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script src="static/js/vendor/twitter/bootstrap.min.js"></script>
 <script src="static/js/vendor/documentcloud/underscore-min.js"></script>
 <script src="static/js/vendor/documentcloud/backbone-min.js"></script>
+<script src="static/js/vendor/jquery-ui-1.8.20.custom.min.js"></script>
+<script src="static/js/vendor/backbone-forms.js"></script>
+<script src="static/js/vendor/jquery-ui-editors.js"></script>
 
 <script src="static/js/built/rhok.js"></script>
 <script src="static/js/built/forms/models.js"></script>
