@@ -1,9 +1,10 @@
 import colander
+import deform
 
 class GrossMotorSkills(colander.Schema):
     supervision = colander.SchemaNode(
         colander.Boolean(),
-        title="Constant supervision"
+        title="Constant supervision",
         description=("Is constant supervision required because of " +
                      "the lack of the safety awareness?"))
     decreased_muscles_tone = colander.SchemaNode(
