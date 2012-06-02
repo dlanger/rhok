@@ -13,9 +13,9 @@
 </head>
 <body>
 
-<section id="form">
-    ${form | n}
-</section>
+
+<div class="container-fluid">
+</div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script src="static/js/vendor/twitter/bootstrap.min.js"></script>
