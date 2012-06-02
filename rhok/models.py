@@ -2,6 +2,7 @@ from sqlalchemy import (
     Column,
     Integer,
     Text,
+    Date,
     )
 
 from sqlalchemy.ext.declarative import declarative_base
@@ -29,8 +30,12 @@ class MyModel(Base):
 class Record(Base):
     __tablename__ = 'records'
     id = Column(Integer, primary_key=True)
+    date = Column(Date)
     data = Column(Text)
+    result = Column(Text)
 
-    def __init__(self, data):
+    def __init__(self, date, data, result):
+        self.date = date
         self.data = data
+        self.result = result
 
