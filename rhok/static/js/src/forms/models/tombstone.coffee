@@ -7,7 +7,7 @@ class Forms.Tombstone extends Backbone.Model
       validators: ['required']
     date_of_birth:
       title: 'Date of Birth'
-      type: 'DateTime'
+      type: 'Date'
       validators: ['required']
 
 
