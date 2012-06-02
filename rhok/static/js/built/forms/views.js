@@ -88,11 +88,15 @@
         loadingText: 'Waiting...'
       })).button();
       this.$el.append(this.$button);
+      this.$errorDialog = $('#Error').modal({
+        show: false
+      });
       return this;
     };
 
     FormView.prototype.onSubmit = function(e) {
-      var errors, formJSON, isValid, section, _i, _len, _ref;
+      var errors, formJSON, isValid, section, that, _i, _len, _ref;
+      that = this;
       e.preventDefault();
       this.$button.button('loading');
       isValid = true;
@@ -114,7 +118,11 @@
         data: {
           data: JSON.stringify(formJSON)
         },
-        success: function(data) {}
+        success: function(data) {},
+        error: function() {
+          that.$errorDialog.modal('show');
+          return that.$button.button('reset');
+        }
       });
     };
 

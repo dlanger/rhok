@@ -19,7 +19,7 @@
     App.prototype.init = function() {
       this.fieldsets = new Backbone.Collection();
       this.fieldsets.add(new Forms.Tombstone({
-        header: 'Tombstone'
+        header: 'Personal Information'
       }));
       this.fieldsets.add(new Forms.Learning({
         header: 'Learning'

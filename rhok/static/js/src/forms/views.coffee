@@ -51,9 +51,15 @@ class Forms.FormView extends Backbone.View
 
     @$el.append(@$button)
 
+    @$errorDialog = $('#Error').modal({
+      show: false
+    })
+
     @
 
   onSubmit: (e) ->
+    that = @
+
     e.preventDefault()
 
     @$button.button('loading')
@@ -77,5 +83,8 @@ class Forms.FormView extends Backbone.View
         data: JSON.stringify(formJSON)
       }
       success: (data) ->
+      error: ->
+        that.$errorDialog.modal('show')
+        that.$button.button('reset')
     })
 

@@ -7,7 +7,7 @@ class App
     # Collection of all sections/fieldsets
     @fieldsets = new Backbone.Collection()
 
-    @fieldsets.add(new Forms.Tombstone( header: 'Tombstone' ))
+    @fieldsets.add(new Forms.Tombstone( header: 'Personal Information' ))
     @fieldsets.add(new Forms.Learning( header: 'Learning' ))
     @fieldsets.add(new Forms.Adaptive( header: 'Adaptive'))
     @fieldsets.add(new Forms.FineMotorSkills( header: 'Fine Motor Skills'))

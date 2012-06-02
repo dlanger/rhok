@@ -23,6 +23,19 @@
   <div class="row" id="Main"></div>
 </div>
 
+<div class="modal hide" id="Error">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">×</button>
+    <h3>Error</h3>
+  </div>
+  <div class="modal-body">
+    <p>An error occurred on the server. Please try again.</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn" data-dismiss="modal">Close</a>
+  </div>
+</div>
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script src="static/js/vendor/jquery-ui-1.8.20.custom.min.js"></script>
 <script src="static/js/vendor/twitter/bootstrap.min.js"></script>
