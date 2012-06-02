@@ -4,13 +4,17 @@ class App
   $el: $('#Main')
 
   init: =>
-    tombstone = new Forms.Tombstone()
 
-    tombstoneView = new Forms.SectionView({
-      model: tombstone
+    # Collection of all sections/fieldsets
+    @fieldsets = new Backbone.Collection()
+
+    @fieldsets.add(new Forms.Tombstone( header: 'Tombstone' ))
+
+    @formView = new Forms.FormView({
+      collection: @fieldsets
     }).render()
 
-    @$el.append(tombstoneView.el)
+    @$el.append(@formView.el)
 
 window.app = new App()
 

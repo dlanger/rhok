@@ -9,14 +9,18 @@
   <title></title>
   <meta name="description" content="">
   <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/bootstrap-responsive.min.css">
   <link rel="stylesheet" href="static/css/backbone-forms.css">
   <link rel="stylesheet" href="static/css/ui-lightness/jquery-ui-1.8.20.custom.css">
   <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
 
-
-<div id="Main" class="container-fluid">
+<div class="container">
+  <header class="row">
+    <h1>RHoK</h1>
+  </header>
+  <div class="row" id="Main"></div>
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
