@@ -24,11 +24,11 @@
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="static/js/vendor/jquery-ui-1.8.20.custom.min.js"></script>
 <script src="static/js/vendor/twitter/bootstrap.min.js"></script>
 <script src="static/js/vendor/twitter/bootstrap-button.js"></script>
 <script src="static/js/vendor/documentcloud/underscore-min.js"></script>
 <script src="static/js/vendor/documentcloud/backbone-min.js"></script>
-<script src="static/js/vendor/jquery-ui-1.8.20.custom.min.js"></script>
 <script src="static/js/vendor/backbone-forms.js"></script>
 <script src="static/js/vendor/jquery-ui-editors.js"></script>
 

@@ -47,7 +47,7 @@ class Forms.FormView extends Backbone.View
       that.$el.append(section.el)
       that.sections.push(section)
 
-    @$button = $(@buttonTmpl( text: 'Submit', loadingText: 'Waiting...' ))
+    @$button = $(@buttonTmpl( text: 'Submit', loadingText: 'Waiting...' )).button()
 
     @$el.append(@$button)
 

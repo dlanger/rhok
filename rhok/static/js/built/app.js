@@ -27,6 +27,9 @@
       this.fieldsets.add(new Forms.Adaptive({
         header: 'Adaptive'
       }));
+      this.fieldsets.add(new Forms.FineMotorSkills({
+        header: 'Fine Motor Skills'
+      }));
       this.fieldsets.add(new Forms.GrossMotorSkills({
         header: 'Gross Motor Skills'
       }));

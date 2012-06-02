@@ -86,7 +86,7 @@
       this.$button = $(this.buttonTmpl({
         text: 'Submit',
         loadingText: 'Waiting...'
-      }));
+      })).button();
       this.$el.append(this.$button);
       return this;
     };
