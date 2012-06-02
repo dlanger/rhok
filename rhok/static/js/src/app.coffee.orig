@@ -4,17 +4,32 @@ class App
   $el: $('#Main')
 
   init: =>
+<<<<<<< HEAD
+=======
+    tombstone = new Forms.Tombstone()
+    adaptive = new Forms.Adaptive()
+>>>>>>> Added Adaptive Skills Form model (FrontEnd).
+
     # Collection of all sections/fieldsets
     @fieldsets = new Backbone.Collection()
 
     @fieldsets.add(new Forms.Tombstone( header: 'Tombstone' ))
     @fieldsets.add(new Forms.Learning( header: 'Learning' ))
-    @fieldsets.add(new Forms.Adaptive( header: 'Adaptive'))
+
     @formView = new Forms.FormView({
       collection: @fieldsets
     }).render()
 
-    @$el.append(@formView)
+<<<<<<< HEAD
+    @$el.append(@formView.el)
+=======
+    adaptiveView = new Forms.SectionView({
+      model: adaptive
+    }).render()
+
+    @$el.append(tombstoneView.el)
+    @$el.append(adaptiveView.el)
+>>>>>>> Added Adaptive Skills Form model (FrontEnd).
 
 window.app = new App()
 
