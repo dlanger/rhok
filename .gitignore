@@ -3,3 +3,4 @@
 *.db
 build/
 dist/
+*.sw[0-9a-z]
