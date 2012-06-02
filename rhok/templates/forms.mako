@@ -28,7 +28,7 @@
 <script src="static/js/vendor/jquery-ui-editors.js"></script>
 
 <script src="static/js/built/rhok.js"></script>
-<script src="static/js/built/forms/models.js"></script>
+<script src="static/js/built/forms/models/tombstone.js"></script>
 <script src="static/js/built/forms/collections.js"></script>
 <script src="static/js/built/forms/views.js"></script>
 <script src="static/js/built/app.js"></script>
