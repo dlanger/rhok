@@ -14,7 +14,7 @@ class App
       collection: @fieldsets
     }).render()
 
-    @$el.append(@formView)
+    @$el.append(@formView.el)
 
 window.app = new App()
 
