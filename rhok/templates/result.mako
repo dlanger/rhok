@@ -1,7 +1,11 @@
-<table class="table table-striped table-bordered table-condensed">
-  <tr><th>Condition</th><th>Probability</th></tr>
-  <tr><td>ASD</td><td>${result['ASD']}</td></tr>
-  <tr><td>ADHD</td><td>${result['ADHD']}</td></tr>
-  <tr><td>DD</td><td>${result['DD']}</td></tr>
-  <tr><td>LI</td><td>${result['LI']}</td></tr>
-</table>
+% if not items:
+    <p>No disorders matched for your child.</p>
+% else:
+    <p>You child displays symptons of:</p>
+
+    <ul>
+    % for item in items:
+        <li>${item}</li>
+    % endfor
+    </ul>
+% endif
