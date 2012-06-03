@@ -55,7 +55,7 @@ def process_data(request):
 
     data = extract(form)
     result = evaluate(data)
-    save_record(data, result)
+    #save_record(data, result)
     return dict(result=result)
 
 

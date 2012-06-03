@@ -28,7 +28,7 @@
     <h3>Error</h3>
   </div>
   <div class="modal-body">
-    <p>An error occurred on the server. Please try again.</p>
+    <p>An error occurred. Make sure you have filled out all the required fields.</p>
   </div>
   <div class="modal-footer">
     <a href="#" class="btn" data-dismiss="modal">Close</a>
@@ -63,6 +63,7 @@
 <script src="static/js/built/forms/models/adaptive.js"></script>
 <script src="static/js/built/forms/models/fine-motor-skill.js"></script>
 <script src="static/js/built/forms/models/grossmotorskills.js"></script>
+<script src="static/js/built/forms/models/social-development.js"></script>
 <script src="static/js/built/forms/collections.js"></script>
 <script src="static/js/built/forms/views.js"></script>
 <script src="static/js/built/app.js"></script>

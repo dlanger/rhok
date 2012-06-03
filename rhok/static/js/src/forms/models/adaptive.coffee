@@ -5,10 +5,15 @@ class Forms.Adaptive extends Backbone.Model
     dressing:
       dataType: 'text'
       validators: ['required']
-      title: 'When did your child begin to dress him/herself?'
+      title: 'When did your child begin to dress him/herself? (in years)'
+      dateType: 'number'
+      type: 'Number'
     picky_eater:
       type: 'Select'
       options: [
+          val: ''
+          label: 'N/A'
+        ,
           val: 'infant'
           label: 'Infant'
         ,
@@ -26,7 +31,7 @@ class Forms.Adaptive extends Backbone.Model
       ]
       title: 'Was your child a picky eater as an'
     sensitve_eater:
-      type: 'Select'
+      type: 'Radio'
       title: 'Was sensitive to certain textures, smells or colours of food?'
       options: [
           val: 'yes'
@@ -36,7 +41,7 @@ class Forms.Adaptive extends Backbone.Model
           label: 'No'
       ]
     difficult_sleeping:
-      type: 'Select'
+      type: 'Radio'
       title: 'Difficulty falling asleep?'
       options: [
           val: 'yes'
@@ -47,7 +52,7 @@ class Forms.Adaptive extends Backbone.Model
       ]
     assitence_needed_sleeping:
       title: 'Does your child request you or another caregiver to be present when falling asleep'
-      type: 'Select'
+      type: 'Radio'
       options: [
           val: 'yes'
           label: 'Yes'
@@ -66,5 +71,7 @@ class Forms.Adaptive extends Backbone.Model
           label: 'No'
       ]
     toilet_training:
-      title: 'What age was your child toilet trained?'
+      title: 'What age was your child toilet trained? (in years)'
+      dateType: 'number'
+      type: 'Number'
 

@@ -77,6 +77,9 @@ class Forms.FormView extends Backbone.View
 
       if errors
         isValid = false
+        that.$errorDialog.modal('show')
+        that.$button.button('reset')
+        return
 
       if not errors
         formJSON[section.model.get('header')] = section.model.toJSON()
@@ -91,10 +94,12 @@ class Forms.FormView extends Backbone.View
       }
 
       success: (html) ->
-        that.$resultsDialog.html(html)
+        that.$resultsDialog.find('.modal-body').html(html).end().modal('show')
 
       error: ->
         that.$errorDialog.modal('show')
+
+      complete: ->
         that.$button.button('reset')
     })
 
