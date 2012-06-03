@@ -9,7 +9,6 @@
   <title></title>
   <meta name="description" content="">
   <link rel="stylesheet" href="static/css/bootstrap.min.css">
-  <link rel="stylesheet" href="static/css/bootstrap-responsive.min.css">
   <link rel="stylesheet" href="static/css/backbone-forms.css">
   <link rel="stylesheet" href="static/css/ui-lightness/jquery-ui-1.8.20.custom.css">
   <link rel="stylesheet" href="static/css/style.css">
@@ -18,7 +17,7 @@
 
 <div class="container">
   <header class="row">
-    <h1>RHoK</h1>
+    <h1>RHoK 2012 - ASD/ADHD Questionnaire</h1>
   </header>
   <div class="row" id="Main"></div>
 </div>

@@ -27,10 +27,19 @@ header {
 
 
 .form-horizontal .control-label {
+    padding-top: 0;
     width: 220px;
     word-wrap: break-word;
 }
 
 .form-horizontal .controls {
     margin-left: 240px;
+}
+
+ul.bbf-radio {
+    list-style: none;
+    margin-left :0;
+}
+.bbf-radio li {
+    list-style: none;
 }
