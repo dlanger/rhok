@@ -20,3 +20,7 @@ header {
     display: inline-block;
     vertical-align: baseline;
 }
+
+.bbf-field {
+    clear: both;
+}
