@@ -24,3 +24,13 @@ header {
 .bbf-field {
     clear: both;
 }
+
+
+.form-horizontal .control-label {
+    width: 220px;
+    word-wrap: break-word;
+}
+
+.form-horizontal .controls {
+    margin-left: 240px;
+}
