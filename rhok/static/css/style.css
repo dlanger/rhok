@@ -9,3 +9,14 @@ header {
 #Error .modal-body {
     font-size: 14px;
 }
+
+.bbf-radio input[type=radio] {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: 5px;
+}
+
+.bbf-radio label {
+    display: inline-block;
+    vertical-align: baseline;
+}
