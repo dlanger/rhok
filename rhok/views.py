@@ -34,7 +34,7 @@ def process_data(request):
 
 
 adequacy_values = dict(lt_adequate=0, adequate=1, bt_adequate=2)
-age_factors = dict(infant=0, toddler=1, child=2, teenager=3, adolescent=4)
+age_factors = dict(infant=0, toddler=1, child=2, teenager=3, adolescent=4,all=5)
 yes_no = dict(yes=True, no=False)
 
 def extract(form):
