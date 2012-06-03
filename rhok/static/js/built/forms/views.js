@@ -91,6 +91,10 @@
       this.$errorDialog = $('#Error').modal({
         show: false
       });
+      this.$resultsDialog = $('#Results').modal({
+        keyboard: false,
+        show: false
+      });
       return this;
     };
 
@@ -118,7 +122,9 @@
         data: {
           data: JSON.stringify(formJSON)
         },
-        success: function(data) {},
+        success: function(html) {
+          return that.$resultsDialog.html(html);
+        },
         error: function() {
           that.$errorDialog.modal('show');
           return that.$button.button('reset');

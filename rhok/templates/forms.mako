@@ -36,6 +36,18 @@
   </div>
 </div>
 
+<div class="modal hide" id="Results">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">×</button>
+    <h3>Results</h3>
+  </div>
+  <div class="modal-body">
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn" data-dismiss="modal">Close</a>
+  </div>
+</div>
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script src="static/js/vendor/jquery-ui-1.8.20.custom.min.js"></script>
 <script src="static/js/vendor/twitter/bootstrap.min.js"></script>

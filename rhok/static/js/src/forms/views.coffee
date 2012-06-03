@@ -55,6 +55,11 @@ class Forms.FormView extends Backbone.View
       show: false
     })
 
+    @$resultsDialog = $('#Results').modal({
+      keyboard: false
+      show: false
+    })
+
     @
 
   onSubmit: (e) ->
@@ -78,11 +83,16 @@ class Forms.FormView extends Backbone.View
 
     $.ajax({
       url: @attributes.action,
+
       type: 'POST'
+
       data: {
         data: JSON.stringify(formJSON)
       }
-      success: (data) ->
+
+      success: (html) ->
+        that.$resultsDialog.html(html)
+
       error: ->
         that.$errorDialog.modal('show')
         that.$button.button('reset')
