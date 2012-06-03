@@ -15,7 +15,7 @@ class Forms.SocialDevelopment extends Backbone.Model
           val: 'on_their_terms'
           label: 'On their terms only'
       ]
-    crawling: 
+    eye_contact: 
       title: 'At what age did your child start to engage in eye contact? (in months)'
       dataType: 'number'
       type: 'Number'

@@ -50,7 +50,7 @@ class Forms.Adaptive extends Backbone.Model
           val: 'no'
           label: 'No'
       ]
-    assitence_needed_sleeping:
+    assistence_needed_sleeping:
       title: 'Does your child request you or another caregiver to be present when falling asleep'
       type: 'Radio'
       options: [

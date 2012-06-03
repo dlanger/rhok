@@ -31,7 +31,7 @@
     <p>An error occurred. Make sure you have filled out all the required fields.</p>
   </div>
   <div class="modal-footer">
-    <a href="#" class="btn" data-dismiss="modal">Close</a>
+    <a href="#" class="btn" data-dismiss="modal">OK</a>
   </div>
 </div>
 
@@ -43,7 +43,7 @@
   <div class="modal-body">
   </div>
   <div class="modal-footer">
-    <a href="#" class="btn" data-dismiss="modal">Close</a>
+    <a href="#" class="btn" data-dismiss="modal">OK</a>
   </div>
 </div>
 
